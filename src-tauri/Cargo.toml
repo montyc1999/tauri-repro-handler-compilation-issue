@@ -1,0 +1,20 @@
+[package]
+name = "tauri-incremental-repro"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "slow"
+path = "src/slow.rs"
+
+[[bin]]
+name = "fast"
+path = "src/fast.rs"
+
+[build-dependencies]
+tauri-build = "2"
+
+[dependencies]
+tauri = "2"
+seq-macro = "0.3"
+serde = { version = "1", features = ["derive"] }

@@ -1,0 +1,19 @@
+{
+  "productName": "tauri-repro-handler-compilation-issue",
+  "version": "0.1.0",
+  "identifier": "com.tauri.dev",
+  "build": {
+    "frontendDist": "../frontend"
+  },
+  "app": {
+    "windows": [
+      {
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src ipc: http://ipc.localhost"
+    }
+  }
+}
